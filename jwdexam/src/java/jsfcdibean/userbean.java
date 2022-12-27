@@ -8,10 +8,8 @@ import javax.enterprise.context.ApplicationScoped;
 @Named(value = "userbean")
 @ApplicationScoped
 public class userbean {
-
    @EJB
     private AdminBeanLocal adminbean;
-
     private String username;
     private String useremail;
     private String useraddress;
@@ -22,7 +20,6 @@ public class userbean {
 
     public Collection<Users> showData() {
         return adminbean.getAllUsers();
-
     }
 
     public String addUsers() {
