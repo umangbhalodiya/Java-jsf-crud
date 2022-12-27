@@ -1,20 +1,10 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/JSF/JSFManagedBean.java to edit this template
- */
 package jsfcdibean;
-
 import beans.AdminBeanLocal;
 import entity.Users;
 import java.util.Collection;
 import javax.ejb.EJB;
 import javax.inject.Named;
 import javax.enterprise.context.ApplicationScoped;
-
-/**
- *
- * @author root
- */
 @Named(value = "userbean")
 @ApplicationScoped
 public class userbean {
