@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:head>
+        <title>Facelet Title</title>
+    </h:head>
+    <h:body>
+        <h:form>
+            Username <h:inputText id="username" value="#{userbean.username}"></h:inputText><br/>
+           Username <h:inputText id="useremail" value="#{userbean.useremail}"></h:inputText><br/>
+           Username <h:inputText id="userpassword" value="#{userbean.userpassword}"></h:inputText><br/>
+           Username <h:inputText id="useraddress" value="#{userbean.useraddress}"></h:inputText><br/>
+            <h:commandButton action="#{userbean.addUsers()}" value="Save"></h:commandButton>
+        </h:form>
+     
+    </h:body>
+        
+</html>
+

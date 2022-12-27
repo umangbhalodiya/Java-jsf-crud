@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html" 
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+    <h:head>
+        <title>Facelet Title</title>
+    </h:head>
+    <h:body>
+        Users
+        <h:form>
+            <h:link value="Add Designation" outcome="insert"> </h:link>
+            <h:dataTable var="u" value="#{userbean.showData()}" border="1" >
+                <h:column>
+                    <f:facet name="header" >Id</f:facet>
+                    <h:outputText value="#{u.userid}"></h:outputText>
+                </h:column>
+                <h:column>
+                    <f:facet name="header" >User Name</f:facet>
+                    <h:outputText value="#{u.username}"></h:outputText>
+                </h:column>
+                <h:column>
+                    <f:facet name="header" >User Email</f:facet>
+                    <h:outputText value="#{u.useremail}"></h:outputText>
+                </h:column>
+                <h:column>
+                    <f:facet name="header" >User Address</f:facet>
+                    <h:outputText value="#{u.useraddress}"></h:outputText>
+                </h:column>
+                <!--                <h:column>
+                                    <f:facet name="header" >
+                                        <h:outputText value="Action"></h:outputText>
+                                    </f:facet>
+                                    <h:commandButton value="delete" action="#{departmentCDIBean.deleteDepartment(d.id)}" onclick="return confirm('Are you sure to delete')"></h:commandButton>
+                                </h:column>
+                                <h:column>
+                                    <f:facet name="header" >
+                                        <h:outputText value="Action"></h:outputText>
+                                    </f:facet>
+                                    <h:commandButton value="Update" action="#{departmentCDIBean.updateForm(d.id)}"></h:commandButton>
+                                </h:column>-->
+            </h:dataTable>
+        </h:form>
+    </h:body>
+</html>
+
