@@ -7,7 +7,7 @@ import javax.persistence.PersistenceContext;
 
 @Stateless
 public class AdminBean implements AdminBeanLocal {
-    @PersistenceContext(name = "jwdexamPU")
+    @PersistenceContext(name = "crudPU")
     EntityManager em;
     @Override
     public Collection<Users> getAllUsers() {
