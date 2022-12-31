@@ -1,1 +1,1 @@
-Crud operation sample using Java Server Faces and Payara server, My sql in Java
+Crud operation sample using Java Server Faces ( JSF ) and Payara server, My sql in Java
