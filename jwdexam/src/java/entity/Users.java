@@ -50,7 +50,6 @@ public class Users implements Serializable {
     @Size(min = 1, max = 255)
     @Column(name = "useraddress")
     private String useraddress;
-
     public Users() {
     }
 
