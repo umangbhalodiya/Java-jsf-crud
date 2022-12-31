@@ -31,23 +31,23 @@ public class userbean {
         return "display";
     }
 
-//    public String deleteDepartment(Integer id) {
-//        adminbean.deleteDepartment(id);
-//        return "display";
-//    }
-//
-//    public String updateForm(Integer id) {
-//        d = adminbean.getDepartment(id);
-//        Dname = d.getDname();
-//        return "update";
-//    }
-//
-//    public String updateFormData() {
-//        d.setDname(Dname);
-//        adminbean.updateDepartment(d.getId(), d.getDname());
-//        Dname = "";
-//        return "display";
-//    }
+   public String deleteDepartment(Integer id) {
+       adminbean.deleteDepartment(id);
+       return "display";
+   }
+
+   public String updateForm(Integer id) {
+       d = adminbean.getDepartment(id);
+       Dname = d.getDname();
+       return "update";
+   }
+
+   public String updateFormData() {
+       d.setDname(Dname);
+       adminbean.updateDepartment(d.getId(), d.getDname());
+       Dname = "";
+       return "display";
+   }
 
     public String getUsername() {
         return username;
