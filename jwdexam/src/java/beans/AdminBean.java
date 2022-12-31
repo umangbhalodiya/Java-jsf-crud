@@ -4,17 +4,15 @@ import java.util.Collection;
 import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
+
 @Stateless
 public class AdminBean implements AdminBeanLocal {
-
     @PersistenceContext(name = "jwdexamPU")
     EntityManager em;
-
     @Override
     public Collection<Users> getAllUsers() {
         return em.createNamedQuery("Users.findAll").getResultList();
     }
-
     @Override
     public void addUser(String username, String useraddress, String userpassword, String useremail) {
         Users d = new Users();
@@ -45,5 +43,4 @@ public class AdminBean implements AdminBeanLocal {
     public Users getUser(Integer userid) {
         return em.find(Users.class, userid);
     }
-    
 }
