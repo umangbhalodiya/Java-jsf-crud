@@ -2,6 +2,7 @@ package beans;
 import entity.Users;
 import java.util.Collection;
 import javax.ejb.Local;
+
 @Local
 public interface AdminBeanLocal {
     Collection<Users> getAllUsers();
